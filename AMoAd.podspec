@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AMoAd"
-  s.version      = "3.6.1"
+  s.version      = "3.6.1.1"
   s.summary      = "AMoAdネイティブ広告（SDK for iOS）"
   s.homepage     = "https://github.com/amoad/amoad-ios-sdk"
   s.ios.deployment_target = '7.0'
@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   
   s.source_files = 'Modules/*.{h,m}'
   s.vendored_library = 'Modules/libAMoAd.a'
+  s.frameworks = 'AdSupport', 'ImageIO'
 end
